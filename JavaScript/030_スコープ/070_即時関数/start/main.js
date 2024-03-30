@@ -1,3 +1,11 @@
+// 一度だけ実行されて
+// 実行結果が呼び出し元に返却される
+// let result = (
+//   function (仮引数) {
+//     return　戻り値
+//   }
+// )(実引数)
+
 function a() {
   console.log("called");
 }
@@ -17,6 +25,8 @@ let c = (function () {
   function privateFn() {
     console.log("privateFn is called");
   }
+  privateFn();
+
   function publicFn() {
     console.log("publicFn is called: " + privateVal++);
   }
