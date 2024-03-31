@@ -1,5 +1,4 @@
 let a = 0;
-let a = 0;
 
 var b = 0;
 var b = 1;
@@ -19,5 +18,3 @@ console.log(g);
 console.log(h);
 let g = 0;
 var h = 0;
-
-let a = 0;
