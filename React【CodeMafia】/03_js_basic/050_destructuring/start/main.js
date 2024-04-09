@@ -9,18 +9,18 @@ console.log(obj.y);
 const arr = ["Japan", "Tokyo", "Shinjuku"];
 const objAddress = { country: "Japan", state: "Tokyo", city: "Shinjuku" };
 
-const fnArr = (arry) => {
+const fnArr = ([country, state, city]) => {
   console.log("---配列---");
-  console.log(`country: ${arry[0]}`);
-  console.log(`state: ${arry[1]}`);
-  console.log(`city: ${arry[2]}`);
+  console.log(`country: ${country}`);
+  console.log(`state: ${state}`);
+  console.log(`city: ${city}`);
 };
 
-const fnObj = (objAddr) => {
+const fnObj = ({ country, state, city }) => {
   console.log("---オブジェクト---");
-  console.log(`country: ${objAddr.country}`);
-  console.log(`state: ${objAddr.state}`);
-  console.log(`city: ${objAddr.city}`);
+  console.log(`country: ${country}`);
+  console.log(`state: ${state}`);
+  console.log(`city: ${city}`);
 };
 
 fnArr(arr);
