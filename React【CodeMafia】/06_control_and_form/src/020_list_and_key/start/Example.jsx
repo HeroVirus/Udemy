@@ -1,4 +1,3 @@
-
 const animals = ["Dog", "Cat", "Rat"];
 
 const Example = () => {
@@ -7,9 +6,9 @@ const Example = () => {
     animalList.push(<li>{animal}</li>);
   }
 
-  const helloAnimals = animals.map((animal) => {
-    return <li>Hello {animal}</li>;
-  });
+  // const helloAnimals = animals.map((animal) => {
+  //   return <li>Hello {animal}</li>;
+  // });
 
   return (
     <>
@@ -21,7 +20,9 @@ const Example = () => {
         {helloAnimals} */}
         {/* {animalList} */}
 
-        {animals.map((animal) => <li>Hello, {animal}</li>)}
+        {animals.map((animal) => (
+          <li key={animal}>Hello, {animal}</li>
+        ))}
       </ul>
     </>
   );
